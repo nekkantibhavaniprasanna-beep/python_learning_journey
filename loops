@@ -1,0 +1,13 @@
+N = input() 
+total = 0 
+product = 1 
+
+for num in N: 
+    digit = int(num) 
+    total += digit     
+    product *= digit   
+
+if product == total: 
+    print("spy num") 
+else: 
+    print("not spy")
