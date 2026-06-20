@@ -1,1 +1,2 @@
-# python_learning_journey includes all python questions which I solved daily
+# python_learning_journey
+It includes all python questions which I solved daily 
