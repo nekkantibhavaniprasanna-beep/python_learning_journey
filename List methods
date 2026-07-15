@@ -1,0 +1,48 @@
+# Initialize a starting list
+fruits = ["apple", "banana", "cherry"]
+print(f"Original list: {fruits}")
+
+# 1. append() - Adds an element to the end of the list
+fruits.append("orange")
+print(f"After append(): {fruits}")
+
+# 2. extend() - Adds all elements of an iterable to the end
+fruits.extend(["grape", "mango"])
+print(f"After extend(): {fruits}")
+
+# 3. insert() - Inserts an element at a specified index
+fruits.insert(1, "blueberry")
+print(f"After insert() at index 1: {fruits}")
+
+# 4. remove() - Removes the first item with the specified value
+fruits.remove("banana")
+print(f"After remove('banana'): {fruits}")
+
+# 5. pop() - Removes and returns the element at the specified index (default is last)
+removed_item = fruits.pop(2)
+print(f"After pop(2) (removed '{removed_item}'): {fruits}")
+
+# 6. index() - Returns the index of the first element with the specified value
+cherry_index = fruits.index("cherry")
+print(f"Index of 'cherry': {cherry_index}")
+
+# 7. count() - Returns the number of elements with the specified value
+fruits.append("apple")  # Add another apple to demonstrate counting
+apple_count = fruits.count("apple")
+print(f"After adding another apple, count('apple'): {apple_count}")
+
+# 8. sort() - Sorts the list in ascending order permanently
+fruits.sort()
+print(f"After sort(): {fruits}")
+
+# 9. reverse() - Reverses the order of the list permanently
+fruits.reverse()
+print(f"After reverse(): {fruits}")
+
+# 10. copy() - Returns a shallow copy of the list
+fruits_copy = fruits.copy()
+print(f"Shallow copy of the list: {fruits_copy}")
+
+# 11. clear() - Removes all elements from the list
+fruits.clear()
+print(f"After clear(): {fruits}")
